@@ -1,5 +1,7 @@
 // Función para calcular la tarifa de los servicios públicos
-function calcularTarifa() {
+function calcularTarifa(event) {
+    event.preventDefault(); // Prevenir recarga de la página
+
     // Obtenemos los valores ingresados en el formulario
     var agua = parseFloat(document.getElementById("agua").value);
     var gas = parseFloat(document.getElementById("gas").value);
@@ -11,7 +13,7 @@ function calcularTarifa() {
         return;
     }
 
-    // Tarifas de ejemplo (puedes ajustar estos valores según las tarifas reales)
+    // Tarifas de ejemplo
     var tarifaAgua = 5000; // Tarifa por metro cúbico de agua
     var tarifaGas = 6000;  // Tarifa por metro cúbico de gas
     var tarifaKw = 1000;   // Tarifa por kilovatio consumido
@@ -20,5 +22,8 @@ function calcularTarifa() {
     var total = (agua * tarifaAgua) + (gas * tarifaGas) + (kw * tarifaKw);
 
     // Mostramos el resultado en la página
-    document.getElementById("tarifa").textContent = total.toFixed(2); // Mostramos el valor con dos decimales
+    document.getElementById("resultado").textContent = `El total de la tarifa es: $${total.toFixed(2)}`;
 }
+
+// Asociar la función al evento de envío del formulario
+document.getElementById("calculadoraForm").addEventListener("submit", calcularTarifa);

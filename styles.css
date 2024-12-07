@@ -388,3 +388,7 @@ footer h3, footer h5 {
         max-width: 100%;
     }
 }
+
+html {
+    scroll-behavior: smooth;
+}
