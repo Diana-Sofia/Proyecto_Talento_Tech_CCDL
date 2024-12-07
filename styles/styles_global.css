@@ -1,0 +1,58 @@
+/* -- IMPORTACION DE TIPOGRAFIA -- */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@100;300;400;700;900&display=swap');
+
+/* -- DEFINIMOS  LOS COLORES A UTILIZAR Y TAMAÑO DE LA FUENTE -- */
+
+:root {
+    --color-beige-fondo: #F4F1EA;
+    --color-verde_claro: #B0D182;
+    --color-verde_intermedio: #6A8E4E;
+    --color-verde_oscuro: #2C473E;
+    --color-fondo-cajas-macro: #F2EAE2;
+    
+
+    /* Medidas de la fuente lg es grande md es mediano y sm es pequeño */
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+
+}
+
+/* -- BODY --   */
+
+/* establezco el color del body */
+body {
+    background-color: var(--color-beige-fondo) !important;
+}
+
+
+/* Definimos la tipografia para todos los titulos del dom */
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Anton', sans-serif;
+    color: #2C473E ;
+}
+
+/* -- BOTONES --  */
+
+/* Estilo para el botón */
+
+.submitButton {
+    background-color: #B0D182;  /* Color verde */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+    text-decoration: none;
+    color: var(--color-verde_oscuro);
+    margin-top: 20px;
+  }
+
+.contenedor_boton{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+  
