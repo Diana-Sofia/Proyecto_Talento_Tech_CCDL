@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+  <body>
+    <!-- BARRA DE NAVEGACION -->
+     <!-- Cambien lg, para que se expanda la barra cuando sea md -->
+      <!-- tambien cambio bg-body-tertiary por navbar-ligth  para que no tenga el fondo gris
+       y mejor quede transpartentr-->
+    <nav class="navbar navbar-expand-md navbar-ligth">
+      <div class="container-fluid">
+        <!-- aqui que es como el boton del home, voy a cambiar el texto por una imagen -->
+        <a class="navbar-brand" href="#">
+          <img id="logo-navbar" src="./imagenes/icono.png" width="50" alt="Logo de la pagina web">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- aqui va el el id del boton que despliega el menu cuando la pagina es responsiva  -->
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <!-- aqui como <ul> lo indica voy a modificar la lista de nombres o de pestañas del navbar -->
+            <!-- estas clases las quitamos me-auto my-2 my-lg-0  navbar-nav-scroll VALIDAR QUE HACEN? -->
+          <ul class="navbar-nav d-flex justify-content-center aling-items-center "  style="--bs-scroll-height: 100px;"> 
+            <!-- en la parte de arriba en las clases agrego navbar-nav d-flex justify-content-center aling-items-center para centrar el contenido -->
+            <li class="nav-item" >
+              <!-- aqui modifico los nombres de los link o el valor que se va a mostrar en el navbar -->
+              <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Clientes felices</a>
+            </li>
+            <li class="nav-item dropdown">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+
+              <!-- Esto tampoco lo voy a utilizar pero es un link que puedo utilzar a futuro esto era un link que se despliega como un menus -->
+              
+              <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Link
+              </a> -->
+              <!-- <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Link</a>
+            </li>
+          </ul> -->
+            
+          <!-- Por el momento no necesito una barra de busqueda por eso quito el input que buscaba -->
+          
+          <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+    
+      <!-- aqui agrego el carrusel de la pagina web -->
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="https://www.energiaestrategica.com/wp-content/uploads/2022/01/nota-1-4.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://lh5.googleusercontent.com/8iebAPC89oYWUsLqn5DeqS6aVPe7qB-iR5jyPlNsED8EyxsvMyTdLEQtBzunHUVuSMxvH5Gzz26NW_7cC4ajvWIrsQER-BHYWp-_AxsX8bhhe3oY6ql7pSlhI7T7fAVPC4vM9i0pKVIElJYVT5blRK8" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.energiaestrategica.com/wp-content/uploads/2021/07/DJI_0166-2048x1152.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- aqui van las cartas -->
+      <div id="cartas">
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

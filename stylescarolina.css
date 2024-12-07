@@ -1,0 +1,159 @@
+/* General */
+body {
+    background-color: #F4F1EA;
+    color: #2C473E;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Anton', sans-serif;
+    color: #2C473E;
+}
+
+/* Centrar título y párrafos */
+h3 
+ {
+        text-align: justify; /* Justifica el texto */
+        
+    }
+    .text-container {
+        width: 100%; /* Hace que el contenedor ocupe todo el ancho */
+        max-width: 1100px; /* Ajusta el tamaño máximo del contenedor (puedes cambiar el valor si necesitas) */
+        margin: 0 auto; /* Centra el contenedor en la página */
+        padding: 20px; /* Agrega espacio alrededor del texto */
+    }
+    
+    .justificado {
+        text-align: justify; /* Hace que el texto se justifique (alineado de manera pareja) */
+    }
+    
+    h1, h2 {
+        text-align: center; /* Centra los títulos */
+        margin-bottom: 20px; /* Espacio debajo de los títulos */
+    }
+    
+    centrado{
+        text-align: center; /* Centra los títulos */
+        margin-bottom: 20px; /* Espacio debajo de los títulos */
+    }
+    
+/* Ajustar márgenes del título */
+h3 {
+    text-align: center;
+    margin: 20px auto; /* Cambia este valor según necesites */
+}
+
+/* Ajustar márgenes de los párrafos */
+p, h5 {
+    text-align: center;
+    margin: 15px auto; /* Este es el que se cambia para la margen */
+}
+/* Encabezado y Pie de Página */
+header, footer {
+    background-color: #6A8E4E;
+    color: #F4F1EA;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1, footer h3 {
+    margin: 0;
+}
+
+/* Acordeón */
+.accordion {
+    margin: 20px auto;
+    max-width: 800px; /* Limita el ancho del acordeón */
+}
+
+.accordion-item {
+    margin-bottom: 20px;
+    border: none;
+}
+
+.accordion-button {
+    font-family: 'Anton', sans-serif;
+    background-color: #B0D182;
+    color: #2C473E;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.accordion-button:hover {
+    background-color: #6A8E4E;
+    color: #F4F1EA;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-collapse {
+    border-top: 1px solid #B0D182;
+    padding: 10px;
+}
+
+.accordion-body {
+    background-color: #F4F1EA;
+    color: #2C473E;
+}
+
+/* Espaciado entre acordeones */
+.accordion-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+/* Imágenes */
+img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    border: none;
+}
+
+/* Videos */
+video {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Botones */
+button {
+    cursor: pointer;
+}
+
+/* Estilo para el botón */
+#submitButton {
+    background-color: #B0D182;  /* Color verde */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+  }
+  
+  /* Cambiar el color cuando el botón se selecciona */
+  #submitButton:active {
+    background-color: #6A8E4E;  /* Color al hacer clic */
+  }
+  
+  /* Cambiar el color cuando el botón pasa sobre él */
+  #submitButton:hover {
+    background-color: #8a9c6a; /* Color cuando el mouse está sobre el botón */
+  }
+  
+  /* Separar el formulario del footer */
+  form {
+    margin-bottom: 20px; /* Añadir margen para separar del footer */
+  }
+/* Footer */
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
