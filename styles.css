@@ -392,3 +392,29 @@ footer h3, footer h5 {
 html {
     scroll-behavior: smooth;
 }
+
+.datos_energia {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    margin: 0;
+    padding: 0; 
+    background-color: #f9f5ec;
+    text-align: center;
+}
+
+iframe {
+    border: none; 
+    margin-top: 20px; 
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333; 
+    margin: 0; 
+    padding: 10px;
+}
+
+
